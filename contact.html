@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Contact</title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body>
+
+  <!-- Container Div -->
+  <div class="container">
+
+    <!-- Section 1: Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <!-- Our brand / logo -->
+      <a class="navbar-brand" href="index.html"><h2>Your Name</h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <!-- Collapsible button -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+
+          <!-- The links of our navbar -->
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron element -->
+    <div class="jumbotron">
+        <div class="form-group;" class="mx-auto" style="width: 960px;">
+                 <h1>Contact</h1>
+   
+        </div>
+            <form>
+                    <div class="form-group;" class="mx-auto" style="width: 960px;">
+                      <label for="exampleInputEmail1">Name</label>
+                      <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="John Smith">
+                      <small id="name" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group;" class="mx-auto" style="width: 960px;">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                        <small id="emailHelp" ></small>
+                      </div>
+                      <div class="form-group;" class="mx-auto" style="width: 960px;">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+    </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+<footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
+</html>
