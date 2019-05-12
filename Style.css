@@ -20,7 +20,7 @@ h3 {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background: blue;
 }
 h2 {
     float: left;
@@ -33,12 +33,12 @@ h2 {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background: blue;
 }
 .btn-primary {
     color: #fff;
-    background-color: #4aaaa5;
-    border-color: #4aaaa5;
+    background-color: blue;
+    border-color: blue;
 }
 .form-control {
     display: block;
@@ -57,7 +57,7 @@ footer {
     color: #cccccc;
     text-align: center;
     background: #666666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid blue;
     height: 50px;
 }
 
@@ -89,3 +89,9 @@ footer {
         
     }
 }
+.flexcontainer{
+    display: flex;
+    webkit-justify-content: center;
+    height:380px;
+    background-color: lightblue;
+    }
