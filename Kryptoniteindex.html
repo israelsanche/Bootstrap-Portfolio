@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="kryptoassets/css/style.css">
+
+
+</head>
+
+<body>
+        <div class="container">
+
+                <!-- Section 1: Navbar-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+                  <!-- Our brand / logo -->
+                  <a class="navbar-brand" href="index.html"><h2>Iarael Sanchez</h2></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            
+                    <!-- Collapsible button -->
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+            
+                      <!-- The links of our navbar -->
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                      </li>
+            
+                      <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+            
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+        <audio controls autoplay>
+                <source src="kryptoassets/superman.mp3" type="audio/ogg">
+                <source src="kryptoassets/superman.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+
+    <!-- This is the header title for the game, maybe use jumbotron... -->
+    <div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h3 class="display-4" style="text-align: center;">Pick your Kryptonite!!!</h3>
+            <p class="lead" id="directions-text" style="text-align: center;" >Click on Kryptonite Crystals in correct sequence to match the random number generated. If you pass the score of the Random Number, you lose. Can you save Superman from the Kryptonite?</p>
+        </div>
+    </div>
+    <!-- this section is for current total score clicked and computer random generated score. -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 style="text-align: center" class="card-title">Your total Score:</h5>
+                    <h1 style="text-align: center" id="clickedscore-text">0
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 style="text-align: center" class="card-title">Wins:</h3>
+                    <h5 style="text-align: center" id="wins-text">-</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 style="text-align: center" class="card-title">Losses:</h3>
+                    <h5 style="text-align: center" id="losses-text">-</h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 style="text-align: center" class="card-title">Random Number to Beat:</h5>
+                    <h1 style="text-align: center" id="random-text">Total of Current Score here</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- this section is for win and loss counts: -->
+
+    <div>
+
+    </div>
+    <!-- This div is for the section with instructions on screen. thinking of moving to bottom... -->
+    <div style="text-align: center" class="row">
+
+        <div id="crystalbutton1" class="card; col-sm-3" style="width: 10rem;">
+            <img src="kryptoassets/images/blackcrystal.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h6 class="card-text">Black Kryptonite</h6>
+            </div>
+        </div>
+        <div class="card; col-sm-3" style="width: 10rem;">
+            <img id="crystalbutton2" src="kryptoassets/images/bluecrystal.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h6 class="card-text">Blue Kryptonite</h6>
+            </div>
+        </div>
+        <div id="crystalbutton3" class="card; col-sm-3" style="width: 10rem;">
+            <img src="kryptoassets/images/redcrystal.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h6 class="card-text">Red Kryptonite</h6>
+            </div>
+        </div>
+        <div id="crystalbutton4" class="card; col-sm-3" style="width: 10rem;">
+            <img src="kryptoassets/images/greencrystal.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h6 class="card-text">Green Kryptonite</h6>
+            </div>
+        </div>
+
+    </div>
+    <div>
+
+
+    </div>
+
+
+
+
+    </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="kryptoassets/game.js"></script>
+    <script type="text/javascript">
+
+        // $("#random-text").text("Must Beat: " + randomNumber)
+        console.log(crystal1);
+        console.log(crystal2);
+        console.log(crystal3);
+        console.log(crystal4);
+
+
+    </script>
+</div>
+</body>
+
+</html>

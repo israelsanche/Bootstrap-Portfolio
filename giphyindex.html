@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CDN below -->
+    <link rel="icon" type="image/ico" href="http://www.iconarchive.com/download/i75988/martz90/circle-addon1/new-york-times.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="giphyassets/css/style.css">
+    <!-- Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+    <title>Giphy Search</title>
+</head>
+
+<body>
+    
+    <div class="container">
+            <!-- Section 1: Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Our brand / logo -->
+            <a class="navbar-brand" href="index.html"><h2>Iarael Sanchez</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+              <!-- Collapsible button -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+      
+                <!-- The links of our navbar -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+      
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- Content here -->
+        <div class="jumbotron">
+            <h1 style="text-align: center" class="display-3">What the Giphy!!</h1>
+
+        </div>
+        <div >
+            <div >
+                <!-- serach boxes -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="far fa-compass"></i> Search
+                    </div>
+                    <div class="card-body" align="center">
+                        <!-- search input -->
+                    
+                                <label for="formGroupInput1">Click for Giphy:</label>
+                                <div>
+                                 <button type="button" id="cat" class="btn btn-light">Cat</button>
+                                 <!-- <div> -->
+
+                                 <!-- </div> -->
+                            <button type="button" id="dog" class="btn btn-light">Dog</button>
+                            <!-- <div></div> -->
+                            <button type="button" id="elephant" class="btn btn-light">Elephant</button>                                   
+                                <!-- </div> -->
+                                <button type="button" id="mouse" class="btn btn-light">Mouse</button>
+                                <!-- <div></div> -->
+                                <button type="button" id="donkey" class="btn btn-light">Donkey</button>
+                                <!-- <div></div> -->
+                                <button type="button" id="shrek" class="btn btn-light">Shrek</button>
+                                <div></div>
+
+
+                            
+
+                            
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div >
+                <!-- Content -->
+                <div class="card">
+                    <div class="card-header">
+                        <p> Giphy Results:</p>
+                    </div>
+                    <div class="card-body" id="result_card">
+                       <p id="loading">
+                        Giphy's will display here... loading... loading...   
+                       </p> 
+                    </div>
+                    <div class="row">
+                            <img class="images" id="image1" src="https://media3.giphy.com/media/CjmvTCZf2U3p09Cn0h/200w.gif" alt="..." class="img-thumbnail" >
+                            <P id="image1text">RATED: G</P>;
+                            <img class="images" id="image2" src="https://media1.giphy.com/media/JIX9t2j0ZTN9S/200w.gif" alt="..." class="img-thumbnail">
+                            <P id="image2text">RATED: G</P>;
+                            <img class="images" id="image3" src="https://media1.giphy.com/media/nNxT5qXR02FOM/200w.gif" alt="..." class="img-thumbnail">
+                            <P id="image3text">RATED: G</P>;
+                    </div>
+                    <div class="row">
+                            <img class="images" id="image4" src="https://media0.giphy.com/media/RQSuZfuylVNAY/200w.gif" alt="..." class="img-thumbnail"><P id="image4text">RATED: G</P>;
+                            <img class="images" id="image5" src="https://media1.giphy.com/media/xThtadSLoInlcD1UmA/200w.gif" alt="..." class="img-thumbnail"><P id="image5text">RATED: G</P>;
+                            <img class="images" id="image6" src="https://media2.giphy.com/media/mCRJDo24UvJMA/200w.gif" alt="..." class="img-thumbnail"><P id="image6text">RATED: G</P>;
+                    </div>
+                    <div class = "row">
+                            <img class="images" id="image7" src="..." alt="..." class="img-thumbnail"><P id="image7text">RATED:</P>;
+                            <img class="images" id="image8" src="..." alt="..." class="img-thumbnail"><P id="image8text">RATED:</P>;
+                            <img class="images" id="image9" src="..." alt="..." class="img-thumbnail"><P id="image9text">RATED:</P>;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      
+        <!-- Footer -->
+        <!-- <footer class="page-footer font-small blue pt-4">
+            <audio controls  >
+            <source src="assets/Spiderman.mp3" type="audio/ogg">
+            <source src="assets/Spiderman.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>         -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">Made with lots and lots of <i class="fas fa-heart"></i>
+                <a href="https://github.com/tklarrabee/GroupRepo/tree/master/assets/css"> Group Repo</a>
+            </div>
+            <!-- Copyright -->
+
+          
+        </footer>
+        <!-- Footer -->
+    </div>
+
+
+    </div>
+
+</body>
+
+<script src="giphyassets/js/app.js"></script>
+
+</html>

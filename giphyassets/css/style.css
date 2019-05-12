@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Libre+Barcode+39|Lora');
+
+.jumbotron {
+    background-image: url("https://developers.giphy.com/static/img/api.c99e353f761d.gif");
+    background-size: cover;
+    font-family: 'anton', sans-serif; color: rgb(205, 205, 206);
+}
+.clear {
+display: inline-block;}
+
+body {
+    background-color: black;
+    background-size: auto;
+}
+.card {
+    background-color: darkblue;
+    color: white;
+}
+.click {
+    color: white;
+}
